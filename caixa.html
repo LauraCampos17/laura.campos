@@ -11,6 +11,18 @@
     <body>
         <img src="/img/caixa.jpg" alt="Caixa Eletrônico">
         <h1>Programa Caixa Eletrônico</h1>
-        <h4>O programa lê o valor de saque de um cliente, verifica sua validade (ou seja, se pode ser pago com </h4>
+        <h4>O programa lê o valor de saque de um cliente, verifica sua validade (ou seja, se pode ser pago com notas de 100, 50 e 10 necessárias para esse saque)</h4>
+        <form>
+            <p>Valor do saque:
+                <input type="number" id="inSaque" min="10" required>
+            </p>
+            <input type="submit" value="Exibir notas para saque">
+            <input type="reset" value="limpar campo">
+        </form>
+        <h3 id="outResp1"></h3>
+        <h3 id="outResp2"></h3>
+        <h3 id="outResp3"></h3>
+
+        <script src="caixa.js"></script>
     </body>
 </html>
